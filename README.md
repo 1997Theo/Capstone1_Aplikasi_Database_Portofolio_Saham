@@ -1,0 +1,1 @@
+# Capstone1_Aplikasi_Database_Portofolio_Saham
