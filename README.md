@@ -3,21 +3,22 @@ Capstone Project 1 – Stock Portofolio Database
 Program ini adalah sebuah program yang menyimpan database portofolio saham penggunanya dan juga dapat menjadi tools untuk simulasi transaksi saham yang dilakukan sebelum melakukannya pada pasar saham yang sebenarnya. Data utama pada program ini adalah kode saham (terdiri dari 4 huruf yang merupakan representasi nama perusahaan di Bursa Efek Indonesia), banyaknya saham yang dimiliki (dalam lot), Harga terakhir saham sesuai dengan data pada Bursa Efek Indonesia (dalam Rp./lembar saham), Harga average dari saham yang dimiliki (dalam Rp./lembar saham), total value saham yang dimiliki (dalam Rupiah), dan juga nilai Floating Profit/Loss dari saham yang dimiliki (dalam rupiah) sesuai dengan harga saham yang terakhir kali diupdate. Semua data ini tersimpan pada suatu list. 
 Selain itu program ini juga akan meminta penggunannya untuk memasukkan sejumlah uang untuk membeli saham, dan akan menambah uang pengguna jika pengguna menjual saham, seiring dengan itu program ini juga akan mencatat total realized Profit/Loss yang terjadi saat transaksi saham agar pengguna dapat mengetahui performanya dalam melakukan transaksi saham. Secara umum, program ini memiliki 6 fitur yang dapat mengakomodir penggunanya untuk mengalami live experience dalam bertransaksi saham. Fitur-fitur tersebut adalah sebagai berikut :	 
 
-1.	Menampilkan, sorting, dan filter list portofolio saham  Fungsi Read, Sort, dan Filter
-Menu 1 terdiri dari rincian sebagai berikut
-a.	Menampilkan seluruh portofolio
+1.	Menampilkan, sorting, dan filter list portofolio saham yaitu Fungsi Read, Sort, dan Filter
+Menu 1 terdiri dari rincian sebagai berikut 
+
+- a.	Menampilkan seluruh portofolio
 Menu ini berfungsi untuk menampilkan seluruh data yang terdapat pada list portofolio saham. Selain menampilkan tabulasi data, menu ini juga menunjukkan total aset, total floating Profit Loss, dan juga uang yang dimiliki sekarang agar pengguna dapat mengetahui kondisi keuangan dan performa trading saham yang dilakukan.
  
 
-b.	Menampilkan list saham tertentu
+- b.	Menampilkan list saham tertentu
 Menu ini Berfungsi untuk memberikan detail terhadap kode saham tertentu yang diinginkan oleh user.
  
 
-c.	Melakukan sorting sesuai kriteria pengguna
+- c.	Melakukan sorting sesuai kriteria pengguna
 Fitur ini berfungsi untuk mengurutkan list portofolio saham yang dimiliki sesuai dengan kriteria oleh pengguna. Fitur yang tersedia adalah pengurutan berdasarkan kode saham (abjad), Quantity saham, total value, dan Floating profit/loss. Contoh dibawah merupakan sorting berdasarkan kode saham :
  
 
-d.	Melakukan filter sesuai kriteria pengguna
+- d.	Melakukan filter sesuai kriteria pengguna
 Fitur ini berfungsi untuk menampilkan list saham yang sesuai dengan kriteria yang dimasukkan oleh pengguna. Adapun kriteria yang dapat dijadikan standard pada program ini adalah Quantity saham, Total value, dan Floating Profit/Loss. Contoh dibawah adalah filter berdasarkan total value dimana nilai yang dimasukkan adalah Rp.10.000.000
  
 
@@ -30,10 +31,7 @@ Fitur ini berfungsi untuk meng-update harga saham tertentu dengan harga terbaru 
  
 
 4.	Mengubah jumlah kepemilikan saham yang sudah ada  Fungsi Update
-Fitur ini berfungsi untuk melakukan transaksi jual/beli pada saham yang terdapat pada list portofolio saham. Hal yang perlu dipastikan saat membeli saham adalah memastikan jumlah uang yang ada cukup, dan juga memakai harga terakhir sebagai harga saham yang akan dibeli. Pengguna harus memasukkan kode saham, jumlah saham, dan harga saham terakhir. Jika transaksi berhasil, maka akan terbentuk harga average yang baru pada saham tersebut dan akan merubah seluruh nilai yang ada pada baris kode saham tersebut sesuai perhitungan pembelian saham. Berikut adalah contoh pembelian saham TLKM sebanyak 20 lot pada harga 5000 yang berhasil dilakukan.
- 
-
-Selain menambah kepemilikan saham, pengguna juga dapat menjual Sebagian dari kepemilikan saham yang telah dimiliki lewat menu ini. Ketika pengguna menjual saham, maka saldo akan bertambah sejumlah dengan penjualan saham. Pengguna juga harus menginput kode saham, jumlah saham yang ingin dijual (tidak boleh keseluruhan), dan harga terakhir saham. Berikut adalah contoh penjualan saham BBCA sebanyak 10 lot di harga 8000. Ketika menjual saham, pengguna juga akan diberikan gambaran mengenai keuntungan/kerugian yang telah terealisasi.
+Fitur ini berfungsi untuk melakukan transaksi jual/beli pada saham yang terdapat pada list portofolio saham. Hal yang perlu dipastikan saat membeli saham adalah memastikan jumlah uang yang ada cukup, dan juga memakai harga terakhir sebagai harga saham yang akan dibeli. Pengguna harus memasukkan kode saham, jumlah saham, dan harga saham terakhir. Jika transaksi berhasil, maka akan terbentuk harga average yang baru pada saham tersebut dan akan merubah seluruh nilai yang ada pada baris kode saham tersebut sesuai perhitungan pembelian saham. Berikut adalah contoh pembelian saham TLKM sebanyak 20 lot pada harga 5000 yang berhasil dilakukan. Selain menambah kepemilikan saham, pengguna juga dapat menjual Sebagian dari kepemilikan saham yang telah dimiliki lewat menu ini. Ketika pengguna menjual saham, maka saldo akan bertambah sejumlah dengan penjualan saham. Pengguna juga harus menginput kode saham, jumlah saham yang ingin dijual (tidak boleh keseluruhan), dan harga terakhir saham. Berikut adalah contoh penjualan saham BBCA sebanyak 10 lot di harga 8000. Ketika menjual saham, pengguna juga akan diberikan gambaran mengenai keuntungan/kerugian yang telah terealisasi.
  
 
 5.	Menjual saham secara keseluruhan  Fungsi Delete
